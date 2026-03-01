@@ -25,7 +25,7 @@ Stop wasting time on manual expense tracking. **Financer_PRO** is an automated p
 
 ## 🚀 Roadmap
 - [x] **v1 (Foundation)**: PDF monitoring & Groq AI extraction.
-- [ ] **v2 (Early March 2026)**: Migration to SQL (SQLite) & Data Integrity Layer.
+- [x] **v2 (Early March 2026)**: Migration to SQL (SQLite) & Data Integrity Layer.
 - [ ] **v3**: AWS S3 & Lambda integration for 24/7 automation.
 
 ## 📁 How to Use
