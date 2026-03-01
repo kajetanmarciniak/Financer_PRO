@@ -1,38 +1,45 @@
-# 🏦 Financer_PRO: AI-Powered Financial Intelligence
-**Powered by Groq & Python Automation**
+# 🏦 AI Financial Auditor v2: PDF-to-SQL Data Pipeline
+**Automated Intelligence for Modern Accounting | Powered by Groq, Python & SQL**
 
-Stop wasting time on manual expense tracking. **Financer_PRO** is an automated pipeline that transforms messy PDF receipts and bank statements into a structured, audit-ready database using LLM intelligence.
+Stop wasting time on manual expense tracking. **AI Financial Auditor** is an automated pipeline that transforms messy PDF receipts and bank statements into a structured, audit-ready **SQLite database** using Llama 3.3 intelligence.
 
 ## 🛠️ Key Features
-* **AI OCR Extraction**: Uses Llama 3.3 (via Groq) to understand context, not just text.
-* **Real-Time Monitoring**: Automatically detects new files in your "vault" and processes them instantly.
-* **Smart Categorization**: Intelligent vendor detection and automatic spending classification.
-* **Currency Intelligence**: Live FX rate integration for multi-currency financial management.
+* **AI-Powered Extraction**: Uses **Llama 3.3 70B** (via Groq) to understand financial context. It distinguishes between a refund and a charge automatically.
+* **SQL Persistence (v2)**: Moves beyond flat files. Every transaction is indexed in a permanent **SQLite3 database** for long-term auditing and history.
+* **Live FX Engine**: Integrated with **Open Exchange Rates API**. Automatically converts foreign currencies (AED, EUR, USD) into your base currency (PLN/USD/EUR) using live market data.
+* **Real-Time Monitoring**: Powered by `Watchdog`. Drop a PDF into the `/vault` folder, and the system processes it in seconds without a single click.
+* **Data Normalization**: Custom engine to clean special characters and standardize vendor names for professional reporting.
 
 ## 📊 Technical Architecture
 | Feature | Implementation |
 | :--- | :--- |
 | **Brain** | Groq AI (Llama 3.3 70B Versatile) |
-| **Pipeline** | Python Watchdog & Multithreading |
-| **Data Engine** | Pandas & SQLite (v2 Coming Soon) |
-| **Cloud Ready** | Designed for AWS Lambda deployment |
+| **Database** | **SQLite3 (Relational Storage)** |
+| **Monitoring** | Python Watchdog (Event-driven) |
+| **FX Rates** | Open Exchange Rates API (Requests) |
+| **Reporting** | SQL Queries & UTF-8-BOM CSV Exports |
 
-## 💡 Why Financer_PRO is different:
-* 🚀 **Context Aware**: It doesn't just see "15.00", it knows it was "Coffee at Starbucks" and labels it as *Food & Drink*.
-* 🧠 **Zero Manual Input**: Just drop a PDF into a folder. The script handles the rest.
-* 🧹 **Auto-Cleaning**: Normalizes Polish characters, fixes date formats, and handles currency symbols.
-* 📁 **Scalable Structure**: Built with a "Clean Code" approach, ready for transition to SQL and Cloud.
+
+
+## 💡 Why this pipeline is different:
+* 🚀 **Context-Aware**: It doesn't just see "15.00", it knows it was "Netflix Subscription" and labels it as *Entertainment*.
+* 🧠 **Zero Manual Input**: Fully automated "Vault" system — no buttons to click.
+* 🧹 **Audit-Ready**: Tracks `file_source` and `processed_at` timestamp for every entry, ensuring data integrity.
 
 ## 🚀 Roadmap
-- [x] **v1 (Foundation)**: PDF monitoring & Groq AI extraction.
-- [x] **v2 (Early March 2026)**: Migration to SQL (SQLite) & Data Integrity Layer.
-- [ ] **v3**: AWS S3 & Lambda integration for 24/7 automation.
+* ✅ **v1 (Foundation)**: PDF monitoring & Groq AI extraction.
+* ✅ **v2 (Database)**: Full SQL integration, Live FX rates, and data normalization. (**Current Version**)
+* 📅 **v3 (Cloud)**: AWS S3 & Lambda integration for 24/7 cloud automation (Planned for late 2026/2027).
 
-## 📁 How to Use
-1.  Place your API Key in a `.env` file (never share it!).
-2.  Drop your PDF invoices into the `/vault` folder.
-3.  Run the engine: `Financer_PRO.py`
-4.  Check `/outputs` for your structured data.
+## 📁 Setup & Usage
+1. **Clone & Install Dependencies**:
+   ```bash
+   pip install groq pdfplumber python-dotenv watchdog requests
+   
+   Environment: Create a .env file in the root folder and add your key:
+   GROQ_API_KEY=your_api_key_here
 
----
-*Building the future of personal data engineering. Part of the 2026-2027 Development Journey.*
+   Process Data: Select your base currency and drop PDF files into the /vault folder.
+    View Results: Check /outputs for CSV reports or use DB Browser for SQLite to open financial_audit.db.
+
+Building the future of personal data engineering. Part of the 2026-2027 Development Journey.
