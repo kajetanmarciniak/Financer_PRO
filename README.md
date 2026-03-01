@@ -27,7 +27,7 @@ Stop wasting time on manual expense tracking. **AI Financial Auditor** is an aut
 * 🧹 **Audit-Ready**: Tracks `file_source` and `processed_at` timestamp for every entry, ensuring data integrity.
 
 ## 🚀 Roadmap
-* ✅ **v1 (Foundation)**: PDF monitoring & Groq AI extraction.
+* ✅ **v1 (Foundation)**: PDF monitoring & Groq AI extraction. (**February Version**)
 * ✅ **v2 (Database)**: Full SQL integration, Live FX rates, and data normalization. (**Current Version**)
 * 📅 **v3 (Cloud)**: AWS S3 & Lambda integration for 24/7 cloud automation (Planned for March/April 2026).
 
