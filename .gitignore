@@ -227,3 +227,6 @@ __marimo__/
 # Dane prywatne
 PLIKI/
 RAPORT_ZBIORCZY.xlsx
+# SQLite databases
+*.db
+*.db-journal
