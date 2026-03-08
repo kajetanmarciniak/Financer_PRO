@@ -61,7 +61,7 @@ AWS_REGION=eu-central-1
 AWS_S3_BUCKET=your_bucket_name
 
 3. Run the Auditor
-    Start the script: Financer-PRO.py
+    Start the script: Financer-PROv3.py
     Select your base currency (e.g., PLN).
     Drop PDF files into the /vault folder.
     View results in /outputs or your AWS S3 Bucket.
