@@ -1,5 +1,6 @@
-groq
-python-dotenv
+openai
 pdfplumber
+boto3
+python-dotenv
 watchdog
 requests
