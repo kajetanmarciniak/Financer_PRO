@@ -230,3 +230,5 @@ RAPORT_ZBIORCZY.xlsx
 # SQLite databases
 *.db
 *.db-journal
+vault/
+outputs/
