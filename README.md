@@ -11,6 +11,7 @@ Stop wasting time on manual expense tracking. **AI Financial Auditor** is a prof
 * **🛡️ Security Shield**: Built-in protection against **Prompt Injection** and **SQL Injection**. Filters forbidden phrases and uses parameterized queries.
 * **🗄️ SQL Persistence**: Every transaction is indexed in a permanent **SQLite3 database** with full audit trails (`file_source`, `processed_at`).
 * **💱 Live FX Engine**: Integrated with **Open Exchange Rates API**. Automatically converts foreign currencies (AED, EUR, USD, etc.) into your base currency using live market data.
+* **💱 Smart Currency Normalization**: Advanced mapping engine that intelligently handles dozens of currency formats. It recognizes symbols ($, €, zł), full names (Dirhams, Euro, Zloty), and shorthand (Dhs, DH, Zł) and maps them to standard ISO 4217 codes for precise FX conversion.**
 * **⚡ Real-Time Monitoring**: Event-driven architecture via `Watchdog`. Drop a PDF into `/vault`, and the system handles the rest.
 
 ---
@@ -37,7 +38,8 @@ Stop wasting time on manual expense tracking. **AI Financial Auditor** is a prof
 ## 🚀 Roadmap
 * ✅ **v1 (Foundation)**: PDF monitoring & Groq AI extraction.
 * ✅ **v2 (Database)**: SQL integration, Live FX rates, and normalization.
-* ✅ **v3 (Cloud)**: **AWS S3 Integration & Security Hardening (Current Version)**.
+* ✅ **v3 (Cloud)**: AWS S3 Integration & Security Hardening.
+* ✅ **v3.1 (Cloud & Stability)**: **AWS S3 Integration, Smart Currency Normalization & SQL Schema Hardening (Current Version)**.
 * 📅 **v4 (Analysis)**: Streamlit Dashboard for visual expense analytics.
 
 ---
